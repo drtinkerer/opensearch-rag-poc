@@ -1,0 +1,34 @@
+# RAG (Retrieval-Augmented Generation) Dependencies
+
+# Core OpenSearch
+opensearch-py>=2.4.0
+
+# Embedding Models
+sentence-transformers>=2.2.0
+torch>=2.0.0  # Required by sentence-transformers
+transformers>=4.30.0
+
+# Optional: OpenAI integration for LLM generation
+# Uncomment if you want to use OpenAI models
+# openai>=1.0.0
+# tiktoken>=0.5.0  # Token counting for OpenAI
+
+# Text Processing
+nltk>=3.8.0  # For advanced text splitting
+# Alternative text splitters
+# langchain>=0.1.0  # Full LangChain framework (larger install)
+
+# Progress bars and utilities
+tqdm>=4.65.0
+
+# HTTP and SSL
+urllib3>=1.26.0
+certifi>=2023.0.0
+
+# Data handling
+numpy>=1.24.0
+pandas>=2.0.0  # Optional, for data analysis
+
+# Optional: For advanced RAG features
+# rank-bm25>=0.2.2  # BM25 reranking
+# faiss-cpu>=1.7.4  # Alternative vector search
